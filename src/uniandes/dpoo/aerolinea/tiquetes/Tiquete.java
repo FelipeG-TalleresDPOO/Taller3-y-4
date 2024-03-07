@@ -10,7 +10,7 @@ public class Tiquete {
 
 	private String codigo;
 	private int tarifa;
-	private boolean usado;
+	private boolean usado = false;
 	private Vuelo vuelo;
 	private Cliente clienteComprador;
 	

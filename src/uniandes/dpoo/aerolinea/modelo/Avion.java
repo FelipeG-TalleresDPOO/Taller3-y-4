@@ -21,11 +21,11 @@ public class Avion {
 	
 	// Método para obtener el nombre del avión
 	public String getNombre() {
-		return this.nombre;
+		return nombre;
 	}
 	
 	// Método para obterner la capacidad del avión
 	public int getCapacidad() {
-		return this.capacidad;
+		return capacidad;
 	}
 }

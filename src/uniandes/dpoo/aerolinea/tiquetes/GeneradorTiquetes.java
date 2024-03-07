@@ -40,6 +40,7 @@ public class GeneradorTiquetes
         while( codigo.length( ) < 7 )
             codigo = "0" + codigo;
 
+        
         return new Tiquete( codigo, vuelo, cliente, tarifa );
     }
 
@@ -49,7 +50,8 @@ public class GeneradorTiquetes
      */
     public static void registrarTiquete( Tiquete unTiquete )
     {
-        // TODO implementar
+        String codigo = unTiquete.getCodigo();
+        codigos.add(codigo);
     }
 
     /**
@@ -59,7 +61,7 @@ public class GeneradorTiquetes
      */
     public static boolean validarTiquete( String codigoTiquete )
     {
-        // TODO implementar
-        return false;
+        boolean existeCodigo = codigos.contains(codigoTiquete);
+        return existeCodigo;
     }
 }

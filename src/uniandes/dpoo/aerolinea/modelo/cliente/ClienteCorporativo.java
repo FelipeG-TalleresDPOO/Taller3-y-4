@@ -2,15 +2,17 @@ package uniandes.dpoo.aerolinea.modelo.cliente;
 
 import org.json.JSONObject;
 
+import uniandes.dpoo.aerolinea.modelo.Vuelo;
+import uniandes.dpoo.aerolinea.tiquetes.Tiquete;
+
 /**
  * Esta clase se usa para representar a los clientes de la aerolínea que son empresas
  * 21 Feb 2024  * @author          
   Felipe Gaitan */
 public class ClienteCorporativo extends Cliente
 {
-    // TODO completar
     
-	public String CORPORATIVO = "Corporativo";
+	public static String CORPORATIVO = "Corporativo";
 	public int GRANDE = 1;
 	public int MEDIANA = 2;
 	public int PEQUENA = 3;
@@ -37,10 +39,10 @@ public class ClienteCorporativo extends Cliente
 	}
 	
 	public String getIdentificador() {
-		
+		return nombreEmpresa;
 	}
 	
-	
+
     /**
      * Crea un nuevo objeto de tipo a partir de un objeto JSON.
      * 
